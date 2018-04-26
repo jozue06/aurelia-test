@@ -1,0 +1,36 @@
+body {
+  background-color: aqua;
+ 
+}
+
+
+section
+ {
+  padding-left: 25%;
+  padding-right: 25%;
+  /* align-content: center; */
+   
+
+ }
+
+form {
+  padding-left: 25%;
+  padding-right: 25%;
+} 
+h1
+{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 5em;
+}
+
+li
+{
+  padding-left: 40%;
+  list-style: none;
+  background: gray;
+  border: rebeccapurple solid 2px
+}
+
+.delete {
+  padding-right: 5%;
+}

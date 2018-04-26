@@ -1,7 +1,8 @@
-export class TestApp {
+export class Todo {
 
     constructor(description){
         this.description = description;
         this.done = false;
+        console.log('TestApp');
     }
 }

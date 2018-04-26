@@ -1,19 +1,23 @@
+
+
 <template>
+    <require from="./style.css"></require>
+  <section>
   <h1>${heading}</h1>
 
-  <form submit.trigger="addTestApp()" >
-    <input type="text" value.bind="TestAppDescription">
+  <form submit.trigger="addTodo()" >
+    <input type="text" value.bind="todoDescription" placeholder="input a todo item">
     <button type="submit">Add</button>
   </form>
 
   <ul>
-
-    <li repeat.for="list of todos">
-      <input type="checkbox" checked.bind="TestApp.done">
-      <span>
-        ${TestAppDescription}
+    <li repeat.for="todo of todos">
+      <input type="checkbox" checked.bind="todo.done">
+      <span class="delete" css="text-decoration: ${todo.done ? 'line-through' : none}">
+        ${todo.description}
       </span>
-      <button click.trigger="removeTestApp(test)">remove</button>
+      <button click.trigger="removeTodo(todo)">Delete</button>
     </li>
   </ul>
+</section>
 </template>
