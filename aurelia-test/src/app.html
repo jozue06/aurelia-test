@@ -1,0 +1,19 @@
+<template>
+  <h1>${heading}</h1>
+
+  <form submit.trigger="addTestApp()" >
+    <input type="text" value.bind="TestAppDescription">
+    <button type="submit">Add</button>
+  </form>
+
+  <ul>
+
+    <li repeat.for="list of todos">
+      <input type="checkbox" checked.bind="TestApp.done">
+      <span>
+        ${TestAppDescription}
+      </span>
+      <button click.trigger="removeTestApp(test)">remove</button>
+    </li>
+  </ul>
+</template>
